@@ -4,8 +4,8 @@ further by the Honor Code.
 
 Much of the code for the UI was prefilled, and much of the rest was
 guided work. So I do not take credit for the UI. However, the solver.py
-file, which codes for the automatic Rubik's cube solver, was entirely
-written by me.
+file, which codes for the automatic Rubik's cube solver, was written 
+entirely by me.
 
 Usage Overview:
 
@@ -25,7 +25,7 @@ Clockwise quarter turns:
     - u : up (top) face
 
 Counterclockwise quarter turns:
-    - f', b', ;', r', d', u'
+    - f', b', l', r', d', u'
 
 Shortcuts:
     - cmds : prints a list of commands that can be used to execute multiple
