@@ -1,4 +1,7 @@
-This repository extends the Fa 2019 Caltech CS 1 Final, which involved completing a text based UI for a virtual Rubik's Cube. Caltech students who plan to take CS 1 in the future should not look further by the Honor Code.
+#rubiks-cube-solver
+Optimal 2x2x2 Rubik's Cube solver and corners first 3x3x3 Rubik's Cube solver, extended from the Caltech CS 1 final. 
+
+The Caltech CS 1 final involves completing a text based UI for a virtual Rubik's Cube. Caltech students who plan to take CS 1 in the future should not look further by the Honor Code.
 
 Usage Overview:
 
