@@ -1,11 +1,7 @@
-This repository extends the Fa 2019 Caltech CS 1 Final.
-Caltech students who plan to take CS 1 in the future should not look
-further by the Honor Code.
-
-Much of the code for the UI was prefilled, and much of the rest was
-guided work. So I do not take credit for the UI. However, the solver.py
-file, which codes for the automatic Rubik's cube solver, was written 
-entirely by me.
+This repository extends the Fa 2019 Caltech CS 1 Final, which involved
+completing a text based UI for a virtual Rubik's Cube. Caltech students 
+who plan to take CS 1 in the future should not look further by the Honor 
+Code.
 
 Usage Overview:
 
@@ -99,7 +95,7 @@ The resulting 2x2x2 cube solver takes no more than a few seconds to solve a cube
 on a VM with 10 GB RAM available to it. The time required for a solve depends
 heavily on the available RAM, so your mileage may vary.
 
-3x3x3 Rubik's Cube Solver: This solver computes a solution using the corner's first
+3x3x3 Rubik's Cube Solver: This solver computes a solution using the corners first
 method outlined here: rubikscube.info/beginner.php
 
 This solver generally takes a greedy approach to solving a 3x3x3 cube, brute forcing
