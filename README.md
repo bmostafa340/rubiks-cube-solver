@@ -3,7 +3,7 @@ Optimal 2x2x2 Rubik's Cube solver and corners first 3x3x3 Rubik's Cube solver, e
 
 The Caltech CS 1 final involves completing a text based UI for a virtual Rubik's Cube. Caltech students who plan to take CS 1 in the future should not look further by the Honor Code.
 
-Usage Overview:
+# Usage:
 
 This program implements both a 2x2x2 and 3x3x3 Rubik's cube solver. The interactive solver is initialized on a randomly generated cube by default when rubiks_control.py is run. It continuously requests user input through the terminal until the cube is solved.
 
@@ -27,9 +27,11 @@ Shortcuts:
 Solve and store solution in file: solve <filename>
 
 
-Solver Algorithm Overview:
+# Implementation Highlights:
 
-2x2x2 Rubik's Cube Solver: This solver computes an optimal solution by means of a more efficient brute force algorithm.
+## 2x2x2 Rubik's Cube Solver: 
+
+This solver computes an optimal solution by means of a more efficient brute force algorithm.
 
 Optimization 1:
 Rather than building up a single BFS tree from the scrambled state and searching until the solved state is found, two BFS trees are built - one from the scrambled state and one from the solved state. The program alternates between building thenext level of each tree. Each time it builds a new level, it compares the two trees. If the same cube is found in both trees, combining the moves needed to get to the solution from each tree yields a solution (where the moves from the solved state must be reversed).
@@ -48,7 +50,7 @@ To give a sense of just how drastic the speed and memory improvements are, consi
 
 The resulting 2x2x2 cube solver takes no more than a few seconds to solve a cube on a VM with 10 GB RAM available to it. The time required for a solve depends heavily on the available RAM, so your mileage may vary.
 
-3x3x3 Rubik's Cube Solver: This solver computes a solution using the corners first method outlined here: rubikscube.info/beginner.php
+## 3x3x3 Rubik's Cube Solver: This solver computes a solution using the corners first method outlined here: rubikscube.info/beginner.php
 
 This solver generally takes a greedy approach to solving a 3x3x3 cube, brute forcing each step in the process without regard to the global performance.
 
