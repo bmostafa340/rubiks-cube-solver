@@ -46,9 +46,9 @@ must be reversed).
 
 The proof of correctness follows from that of BFS. The i-th level of a BFS tree
 must contain every state that is reachable from the root node in i moves. So
-if an optimal solution of x moves exists, the state after the ((x + 1) // 2)-th move
-will exist in the ((x + 1) // 2)-th level of the BFS tree from the scrambled state,
-as well as the (x - (x + 1) // 2 + 1)-th level of the BFS tree from the solved state. If
+if an optimal solution of x moves exists, the state after the (x // 2)-th move
+will exist in the (x // 2)-th level (0-indexed) of the BFS tree from the scrambled state,
+as well as the (x - x // 2)-th level of the BFS tree from the solved state. If
 a solution has not already been found, this solution will be found, and it will have
 x moves.
 
@@ -80,8 +80,8 @@ such that they do not change a cube's inherent orientation. The specific impleme
 chosen for this solver is to rotate the solved cube so that its top right front cubie is
 in the same position as that of a target solved cube. The set of moves to consider is
 chosen to be (l, l', b, b', d, d'), since they provide the benefit described in the
-previous paragraph while maintaining the orientation of the "pivot" cubie. This enables
-O(1) detection of identical cubes.
+previous paragraph while maintaining the orientation of the "pivot" cubie. This enables 
+detection of identical cubes in O(n) time on the size of a tree.
 
 To give a sense of just how drastic the speed and memory improvements are,
 consider the following. It has been found that the maximum number of quarter
