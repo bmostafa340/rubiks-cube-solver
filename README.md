@@ -34,7 +34,7 @@ Solve and store solution in file: solve <filename>
 This solver computes an optimal solution by means of a more efficient brute force algorithm.
 
 Optimization 1:
-Rather than building up a single BFS tree from the scrambled state and searching until the solved state is found, two BFS trees are built - one from the scrambled state and one from the solved state. The program alternates between building thenext level of each tree. Each time it builds a new level, it compares the two trees. If the same cube is found in both trees, combining the moves needed to get to the solution from each tree yields a solution (where the moves from the solved state must be reversed).
+Rather than building up a single BFS tree from the scrambled state and searching until the solved state is found, two BFS trees are built - one from the scrambled state and one from the solved state. The program alternates between building the next level of each tree. Each time it builds a new level, it compares the two trees. If the same cube is found in both trees, combining the moves needed to get to the solution from each tree yields a solution (where the moves from the solved state must be reversed).
 
 The proof of correctness follows from that of BFS. The i-th level of a BFS tree must contain every state that is reachable from the root node in i moves. So if an optimal solution of x moves exists, the state after the (x // 2)-th move will exist in the (x // 2)-th level (0-indexed) of the BFS tree from the scrambled state, as well as the (x - x // 2)-th level of the BFS tree from the solved state. If a solution has not already been found, this solution will be found, and it will have x moves.
 
